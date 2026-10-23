@@ -1,0 +1,7 @@
+Design Decisions
+
+I renamed several functions and variables to make their purposes clearer and to follow Python naming conventions. Names such as do_math_stuff, do_string_stuff, list1, list2, and x did not clearly communicate what the code was doing. Replacing them with names such as process_numbers, process_strings, numbers, and words makes the program easier to read and helps another developer understand the code without needing to trace every value.
+
+I also simplified parts of the program by using list comprehensions. In the number-processing function, a list comprehension replaces the longer loop that built the result one item at a time. In the string-processing function, I used a list comprehension to transform each word and then used " ".join() to combine the processed words. These changes make the code more concise while keeping the logic readable.
+
+Finally, I added docstrings to each function to explain its purpose, parameters, and return value where appropriate. I avoided adding unnecessary comments because the improved names and simplified code already make most of the logic clear. Overall, these changes improve readability and maintainability while preserving the original behavior of the program.
